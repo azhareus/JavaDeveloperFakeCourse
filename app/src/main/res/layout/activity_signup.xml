@@ -38,10 +38,10 @@
         android:layout_below="@id/ivDeveloper"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:hint="Email"
         android:background="#EEEEEE"
+        android:hint="Email"
         android:padding="15dp"
-        android:textSize="13sp"/>
+        android:textSize="13sp" />
 
     <EditText
         android:id="@+id/etPassword"
@@ -49,15 +49,15 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/etUsername"
         android:layout_alignStart="@+id/etUsername"
+        android:layout_alignLeft="@+id/etUsername"
         android:layout_alignEnd="@+id/etUsername"
+        android:layout_alignRight="@+id/etUsername"
         android:layout_marginTop="15dp"
+        android:background="#EEEEEE"
         android:hint="Password"
         android:inputType="textPassword"
-        android:background="#EEEEEE"
         android:padding="15dp"
-        android:textSize="13sp"
-        android:layout_alignLeft="@+id/etUsername"
-        android:layout_alignRight="@+id/etUsername" />
+        android:textSize="13sp" />
 
     <Button
         android:id="@+id/btSignUp"
@@ -65,13 +65,24 @@
         android:layout_height="60dp"
         android:layout_below="@id/etPassword"
         android:layout_alignStart="@+id/etUsername"
+        android:layout_alignLeft="@+id/etUsername"
         android:layout_alignEnd="@+id/etUsername"
+        android:layout_alignRight="@+id/etUsername"
         android:layout_marginTop="13dp"
         android:backgroundTint="#333333"
         android:text="Sign Up"
         android:textAllCaps="false"
-        android:textSize="15sp"
-        android:layout_alignLeft="@+id/etUsername"
-        android:layout_alignRight="@+id/etUsername" />
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvBackToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="124dp"
+        android:clickable="true"
+        android:text="Return to Login"
+        android:textColor="#000000" />
 
 </RelativeLayout>
